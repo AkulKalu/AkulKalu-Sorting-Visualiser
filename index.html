@@ -1,0 +1,40 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="Flexy">
+        <div class="AlgoContainer">
+            <button id='algorithms' class="Btn BtnAlgo" type="button" value="Quick">Quick Sort</button>
+        </div>
+        <div class="SliderContainer Flexy">
+            <label for="range">Length</label>
+            <input type="range" min="20" max="200" value="100" class="Slider" id="range">
+            <span class="DisplayValue" id="arrLength">100</span>
+        </div>
+        <div class="SliderContainer Flexy">
+            <label for="peed">Speed</label>
+            <input type="range" min="1" max="60" value="20" class="Slider" id="speed">
+            <span class="DisplayValue" id="visSpeed">20</span>
+        </div>
+        <div class="btnMainWrap">
+            <button id="generate" class="Btn BtnMain" type="button">Generate</button>
+            <button class="Btn BtnMain" id="sort" type="button">SORT</button>
+        </div> 
+    </header>
+   
+    <footer>
+       
+        <div id="array" class="Array"></div>
+        <p class="Name">Sorting Visualiser</p>
+    </footer>
+    <script src="./js/sort.js"></script>
+    <script src="./js/variables.js"></script>
+    <script src="./js/interface.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

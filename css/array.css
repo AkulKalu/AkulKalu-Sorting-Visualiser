@@ -1,0 +1,63 @@
+.Array {
+    margin: -41.5vh auto;
+    height: 40vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.ElementInside {
+    position: relative;
+    background-color: rgba(108, 123, 124, 0.815);
+    border-radius: 5px 5px 0 0;
+    width: 80%;
+    box-shadow: 5px 0 4px rgb(168, 166, 166);
+    transition: background-color 0.1s;
+}
+
+.Grow {
+  animation: grow 0.8s forwards ease-in-out;
+  transform-origin: top;
+}
+.Sorted {
+  background-color:rgb(123, 160, 67);
+}
+.ElementOutside {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+.ElementOutside:hover :first-child {
+  background-color:rgb(228, 149, 3);
+}
+
+.ArrayNumber {
+  color: rgb(238, 228, 228);
+  text-align: center;
+  display: inline-block;
+  padding-top: 0.5rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1vh;
+}
+
+.NumberDisplay {
+  position: absolute;
+  left:100%;
+  bottom: 10%;
+  font-size: 10vh;
+  font-weight: 800;
+  z-index: 10;
+  color: rgba(53, 54, 61, 0.575);
+  pointer-events: none;
+}
+
+@keyframes grow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}

@@ -1,0 +1,83 @@
+@import './array.css';
+@import './algorithms.css';
+@import './sliders.css';
+
+@font-face {
+  font-family: bariol;
+  src: url(../bariol_regular-webfont.ttf);
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --slider-fill-range: 20px;
+  --slider-fill-speed: 20px;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  font-family: bariol;
+  font-size: 1.6vh;
+}
+header {
+  background: linear-gradient(to right, #232526, #414345);
+  height: 10vh;
+  justify-content: center;
+  border-bottom: 1.5vh double peru;
+}
+body {
+  overflow: hidden;
+  background: linear-gradient(to top, #8e9eab, #eef2f3); 
+  font-family: bariol;
+  font-size: 1.6vh;
+}
+footer {
+  background: linear-gradient(to right, #232526, #414345);
+  height: 10vh;
+  width: 100%;
+  border-top: 1.5vh double peru;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.Name {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top:0;
+  bottom: 0;
+  color: peru;
+  font-weight: 900;
+  font-size: 5vh;
+  
+}
+.Flexy {
+  align-items: center;
+  display: flex;
+ 
+}
+@media screen and (max-width: 800px) {
+  .Flexy {
+    flex-direction: column-reverse;
+  }
+  header {
+    height: fit-content;
+  }
+}
+
+
+
+
+
+ 
+  
+  
+  
