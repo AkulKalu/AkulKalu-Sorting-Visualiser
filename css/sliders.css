@@ -19,25 +19,25 @@
     outline: none;
     opacity: 0.7;
     display: block;
-    -webkit-transition: .2s;
     transition: opacity .2s;
 }
 
-.Slider::after {
-    transition: width 0.3s;
-    content: '';
-    position: absolute;
-    z-index: -1;
-    height: 0.5vh;
-    bottom: 0;
-    left: 0;
-    background-color: peru
+.Slider::-moz-range-progress {
+    background: peru;
 }
-[id=range]::after {
-    width: var(--slider-fill-range);
-}
-[id=speed]::after {
-    width: var(--slider-fill-speed);
+
+
+ .Slider::-moz-range-thumb  {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 3vh;
+    border-radius: 10%;
+    background:  rgb(83, 70, 83);
+    border: 1px solid orange;
+    cursor: pointer;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .Slider::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -51,25 +51,41 @@
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
+.Slider::-moz-range-thumb:hover {
+    border: 1px solid white;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
 .Slider::-webkit-slider-thumb:hover {
     border: 1px solid white;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
 }
-    
-.Slider::-moz-range-thumb {
-    width: 10px;
-    height: 25px;
-    border-radius: 10%    ;
-    background:  rgb(83, 70, 83);
-    border: 1px solid orange;
-    cursor: pointer;
+.Slider::after {
+    transition: width 0.3s;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 0.5vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: peru;
 }
+
+[id=range]::after {
+    width: var(--slider-fill-range);
+}
+[id=speed]::after {
+    width: var(--slider-fill-speed);
+}
+    
 
 .DisplayValue {
     padding-left: 20px;
     width: 3rem;
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1025px) {
    .SliderContainer {
        flex-direction: row!important;
        width: 90%;

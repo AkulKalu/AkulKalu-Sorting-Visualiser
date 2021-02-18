@@ -2,11 +2,6 @@
 @import './algorithms.css';
 @import './sliders.css';
 
-@font-face {
-  font-family: bariol;
-  src: url(../bariol_regular-webfont.ttf);
-}
-
 
 * {
   padding: 0;
@@ -22,26 +17,25 @@ button {
   background: none;
   outline: none;
   border: none;
-  font-family: bariol;
+  font-family: 'Black Ops One', cursive;
   font-size: 1.6vh;
 }
 header {
   background: linear-gradient(to right, #232526, #414345);
   height: 10vh;
   justify-content: center;
-  border-bottom: 1.5vh double peru;
+  
 }
 body {
   overflow: hidden;
-  background: linear-gradient(to top, #8e9eab, #eef2f3); 
-  font-family: bariol;
-  font-size: 1.6vh;
+  background: linear-gradient(to left, #8e9eab, #eef2f3); 
+  font-family: 'Black Ops One', cursive;
+  font-size: 1.5vh;
 }
 footer {
   background: linear-gradient(to right, #232526, #414345);
   height: 10vh;
   width: 100%;
-  border-top: 1.5vh double peru;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -56,20 +50,19 @@ footer {
   bottom: 0;
   color: peru;
   font-weight: 900;
-  font-size: 5vh;
-  
+  font-size: 4vh;
 }
 .Flexy {
   align-items: center;
   display: flex;
- 
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1025px) {
   .Flexy {
     flex-direction: column-reverse;
   }
   header {
     height: fit-content;
+    height: -moz-max-content;
   }
 }
 

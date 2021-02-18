@@ -1,5 +1,5 @@
 .Array {
-    margin: -41.5vh auto;
+    margin: -40vh auto;
     height: 40vh;
     display: flex;
     align-items: flex-end;
@@ -8,7 +8,6 @@
 .ElementInside {
     position: relative;
     background-color: rgba(108, 123, 124, 0.815);
-    border-radius: 5px 5px 0 0;
     width: 80%;
     box-shadow: 5px 0 4px rgb(168, 166, 166);
     transition: background-color 0.1s;
